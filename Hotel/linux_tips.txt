@@ -1,0 +1,20 @@
+Linux commands:
+1. sudo apt update
+2. sudo apt install postgresql postgresql-contrib
+3. sudo systemctl start postgresql.service
+4. service postgresql status
+5. sudo -u postgres psql - run postgresql as postgres user OR sudo -u -i postgres - interactive session
+6. sudo -u postgres createuser --interactive - create user as postgres
+
+Other Linux:
+sudo apt-get install openssh-server
+sudo systemctl start/enable ssh
+kill -<signal_number> <PID>
+pgrep "process" - get the pid of the process
+ps -p 123 - get info of the PID 123
+
+Postgree commands:
+\l - check avaiable databases
+\q - quit postgresql
+exit - quit from postgres interactive session
+psql -d "database" - switch database
